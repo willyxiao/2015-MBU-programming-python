@@ -34,7 +34,8 @@ def main():
 
     #This is for loop. We take each element from sys.argv and print it to the consile.
     for i in sys.argv[1:]:
-        print str(i)
+        if int(i) % 2 == 0:
+            print str(i)
 
 if __name__ == '__main__':
     main()
